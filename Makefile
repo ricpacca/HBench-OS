@@ -44,7 +44,7 @@
 # summary	produce a summary version of all stored results
 
 SHELL    = /bin/bash
-PLATFORM = $(shell ../scripts/config.guess)
+PLATFORM = $(shell ./scripts/config.guess)
 ARCH     = $(shell echo $(PLATFORM) | sed 's/-.*-.*$$//')
 HOSTNAME = `hostname | sed 's/\..*$$//'`
 
